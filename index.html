@@ -11,7 +11,7 @@
         <div id="tasksHeader">
             <h2>Salve a sua próxima tarefa:</h2>
             <form action="" id="addTaskForm">
-                <input type="text" id="taskTitle" placeholder="O que você vai fazer?">
+                <input type="text" id="taskTitle" placeholder="O que você vai fazer?" autocomplete="off">
                 <button type="submit" id="addBtn">
                     <ion-icon name="add-outline"></ion-icon>
                 </button>
@@ -20,18 +20,8 @@
         <div id="taskListContainer">
             <h2>Estas são as suas tarefas:</h2>
             <ul id="taskList">
-                <li class="taskBox">
-                    <span class="taskTittle">Teste 1</span>
-                    <ion-icon class="doneBtn" name="checkmark-outline"></ion-icon>
-                    <ion-icon class="removeBtn" name="close-outline"></ion-icon>
-                </li>
-                <li class="taskBox">
-                    <span class="taskTittle">Teste 2</span>
-                    <ion-icon class="doneBtn" name="checkmark-outline"></ion-icon>
-                    <ion-icon class="removeBtn" name="close-outline"></ion-icon>
-                </li>
-                <li class="taskBox">
-                    <span class="taskTittle">Teste 3</span>
+                <li class="taskBox template hide">
+                    <span class="taskTitle"></span>
                     <ion-icon class="doneBtn" name="checkmark-outline"></ion-icon>
                     <ion-icon class="removeBtn" name="close-outline"></ion-icon>
                 </li>
